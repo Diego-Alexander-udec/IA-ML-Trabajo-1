@@ -21,3 +21,15 @@ print(b_reshaped)
 [[1 2 3]
  [4 5 6]]
 ```
+### Ejemplo 3: Concatenar arreglos
+```python
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+concatenado = np.concatenate((a, b))
+print(concatenado)
+```
+**Resultado:**
+```
+[1 2 3 4 5 6]
+```
