@@ -1,2 +1,2 @@
-# Bienvenido a Pandas DATAFRAME
-Explicacion de dataframe
+# Bienvenido a Semana 2
+Explicacion de NumPy
