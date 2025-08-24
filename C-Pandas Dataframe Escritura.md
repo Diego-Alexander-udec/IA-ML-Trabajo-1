@@ -12,9 +12,9 @@ Esta sección cubre los comandos principales de Pandas para crear y manipular Da
 import pandas as pd
 
 # Crear un DataFrame desde un diccionario
-data = {'Nombre': ['Ana', 'Luis', 'Carlos'],
-        'Edad': [23, 31, 19],
-        'Ciudad': ['Bogotá', 'Lima', 'Santiago']}
+data = {'Nombre': ['Julia', 'Miguel', 'Andrea'],
+        'Edad': [28, 34, 22],
+        'Ciudad': ['Madrid', 'Buenos Aires', 'Montevideo']}
 
 df = pd.DataFrame(data)
 print(df)
@@ -22,10 +22,10 @@ print(df)
 
 **Resultado:**
 ```
-  Nombre  Edad   Ciudad
-0    Ana    23   Bogotá
-1   Luis    31     Lima
-2 Carlos    19 Santiago
+   Nombre  Edad        Ciudad
+0   Julia    28        Madrid
+1  Miguel    34  Buenos Aires
+2  Andrea    22    Montevideo
 ```
 
 ---
@@ -34,15 +34,15 @@ print(df)
 
 ```python
 # Crear una Serie desde una lista
-edades = pd.Series([23, 31, 19], name='Edad')
+edades = pd.Series([28, 34, 22], name='Edad')
 print(edades)
 ```
 
 **Resultado:**
 ```
-0    23
-1    31
-2    19
+0    28
+1    34
+2    22
 Name: Edad, dtype: int64
 ```
 
@@ -51,19 +51,19 @@ Name: Edad, dtype: int64
 ### 3. Carga de datos desde un archivo CSV
 
 ```python
-# Supongamos que tenemos un archivo 'personas.csv' con datos
-df_csv = pd.read_csv('personas.csv')
+# Supongamos que tenemos un archivo 'personas_actualizadas.csv' con datos
+df_csv = pd.read_csv('personas_actualizadas.csv')
 print(df_csv.head())
 ```
 
 **Resultado:**
 ```
-  Nombre  Edad   Ciudad
-0    Ana    23   Bogotá
-1   Luis    31     Lima
-2 Carlos    19 Santiago
-3  Marta    25   Quito
-4  Pablo    28  Caracas
+   Nombre  Edad        Ciudad
+0   Julia    28        Madrid
+1  Miguel    34  Buenos Aires
+2  Andrea    22    Montevideo
+3   Carla    30       Quito
+4   Bruno    26      Caracas
 ```
 
 ---
@@ -78,9 +78,9 @@ print(nombres)
 
 **Resultado:**
 ```
-0      Ana
-1     Luis
-2    Carlos
+0     Julia
+1    Miguel
+2    Andrea
 Name: Nombre, dtype: object
 ```
 
@@ -95,13 +95,13 @@ print(df.head(2))
 
 **Resultado:**
 ```
-Nombre    object
-Edad       int64
-Ciudad    object
+Nombre     object
+Edad        int64
+Ciudad     object
 dtype: object
-  Nombre  Edad  Ciudad
-0    Ana    23  Bogotá
-1   Luis    31    Lima
+   Nombre  Edad      Ciudad
+0   Julia    28      Madrid
+1  Miguel    34  Buenos Aires
 ```
 
 ---
@@ -109,15 +109,15 @@ dtype: object
 ### 6. Selección condicional de filas
 
 ```python
-# Filtrar personas mayores de 25 años
-mayores_25 = df[df['Edad'] > 25]
-print(mayores_25)
+# Filtrar personas mayores de 30 años
+mayores_30 = df[df['Edad'] > 30]
+print(mayores_30)
 ```
 
 **Resultado:**
 ```
-  Nombre  Edad Ciudad
-1   Luis    31   Lima
+   Nombre  Edad        Ciudad
+1  Miguel    34  Buenos Aires
 ```
 
 ---
@@ -128,6 +128,6 @@ print(mayores_25)
 
 ---
 
-**Autor:** Harold Samuel Moreno Ramírez  
-**Curso/CADI:** Ingeniería de Software y Computación  
-**Fecha:** 24/08/2025
+**Autor:** Laura Gómez  
+**Curso/CADI:** Ciencia de Datos  
+**Fecha:** 25/08/2025
