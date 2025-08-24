@@ -42,8 +42,8 @@ encontrar una función que, a partir de las variables de entrada (input data), l
                 Un ejemplo de aprendizaje por refuerzo es un agente que juega a un videojuego. El agente recibe recompensas por acciones 
                 que conducen a resultados positivos (como ganar puntos) y castigos por acciones que conducen a resultados negativos (como perder vidas). 
                 A través de la exploración y la retroalimentación, el agente aprende a tomar decisiones que maximicen su puntuación en el juego.
-=======
-C) Tipos de ML (supervisado, no supervisado, por refuerzo)
+
+#C) Tipos de ML (supervisado, no supervisado, por refuerzo)#
 El aprendizaje se produce por medio de algoritmos donde se busca entrenar un modelo que distinga datos y genere predicciones. La que así vemos que dentro de la rama de Machine lerning se separan en tres grupos donde simula o entrega como salida (input) un valor, pero esto depende de cómo reciba su entrada, teniendo así los siguientes tipos de algoritmos;
 
 Aprendizaje Supervisado
